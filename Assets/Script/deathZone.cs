@@ -5,7 +5,6 @@ public class deathZone : MonoBehaviour
 {
     public GameObject player;
     public Transform spawnPoint;
-    private GameObject currentPlayer;
     // Spawning and GameOver---------------------------------------------------
     private void OnCollisionEnter(Collision collision)
     {
@@ -19,7 +18,7 @@ public class deathZone : MonoBehaviour
     public void SpawnPlayer()
     {
         Instantiate(player, spawnPoint.position, Quaternion.identity);
-        currentPlayer = Instantiate(player, spawnPoint.position, Quaternion.identity);
+       
     }
     //-----------------------------------------------------------------------
 
