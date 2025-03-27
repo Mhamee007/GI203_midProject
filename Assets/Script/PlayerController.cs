@@ -52,23 +52,11 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("deathZone")) //This player will not run om the wall.
         {
             Destroy(gameObject);
-            FindObjectOfType<PlayerController>().SpawnPlayer();
-
         }
     }
     void OnCollisionExit(Collision collision)
     {
         isAir = true;
     }
- 
-    // Spawning and GameOver--------------------------------------------------------------
-    public GameObject playerPrefab;
-    public Transform respawnPoint;
-    public void SpawnPlayer()
-    {
-
-        Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
-    }
-    //-----------------------------------------------------------------------
-
+    
 }

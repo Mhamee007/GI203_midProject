@@ -4,7 +4,7 @@ using UnityEngine;
 public class fallingBlock : MonoBehaviour
 {
     private Rigidbody rb;
-    private float fallDelay = 1.2f;
+    private float fallDelay = 0.5f;
    
     void Start()
     {

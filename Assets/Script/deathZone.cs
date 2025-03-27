@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class deathZone : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject player;
+    public Transform spawnPoint;
+    // Spawning and GameOver--------------------------------------------------------------
+    private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+           player.transform.position = spawnPoint.position;
+           SpawnPlayer();
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnPlayer()
     {
-        
+        Instantiate(player, spawnPoint.position, Quaternion.identity);
     }
+    //-----------------------------------------------------------------------
+
+
 }
