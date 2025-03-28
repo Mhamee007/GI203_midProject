@@ -14,4 +14,9 @@ public class followcamera : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
         }
     }
+
+    public void SetNewPlayer(Transform newPlayer)
+    {
+        player = newPlayer;
+    }
 }
