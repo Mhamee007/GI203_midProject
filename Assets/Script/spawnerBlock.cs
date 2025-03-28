@@ -5,16 +5,16 @@ public class spawnerBlock : MonoBehaviour
 {
 
     public GameObject block; //objects to spawn back
-    public Transform spawnBlock; //block spawnposition
-
-    public void RespawnBlock()
+  
+    public void RespawnBlock(Vector3 spawnPosition)
     {
-        StartCoroutine(Spawnblock());
+
+        StartCoroutine(Spawnblock(spawnPosition));
     } 
 
-    IEnumerator Spawnblock()
+    IEnumerator Spawnblock(Vector3 spawnPosition)
     {
         yield return new WaitForSeconds(5f);
-        Instantiate(block, spawnBlock.position, Quaternion.identity);
+        Instantiate(block, spawnPosition, Quaternion.identity);
     }
 }
