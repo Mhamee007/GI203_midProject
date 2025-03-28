@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431951473109310771}
+  - component: {fileID: 8257650283608940132}
   m_Layer: 0
   m_Name: spawnblock
   m_TagString: Untagged
@@ -31,3 +32,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8257650283608940132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381975475257621743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bfa7a8e7bd44a48a793096ed3bb367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 4456976771097126685, guid: eed113fe6c4a35c44a821c218a49c559, type: 3}
+  spawnBlock: {fileID: 431951473109310771}

@@ -15,7 +15,7 @@ public class followcamera : MonoBehaviour
         }
     }
 
-    public void SetNewPlayer(Transform newPlayer)
+    public void SetNewPlayer(Transform newPlayer) //set new player after death
     {
         player = newPlayer;
     }

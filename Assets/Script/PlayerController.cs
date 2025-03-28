@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-       
     }
 
     void Update() 
@@ -43,13 +42,13 @@ public class PlayerController : MonoBehaviour
         isGrounded = true;
         isAir = false;
 
-        if (collision.gameObject.CompareTag("wall")) //This player will not run om the wall.
+        if (collision.gameObject.CompareTag("wall")) //This player will not run on the wall.
         {
             float moveY = 0f;
             float moveX = 0f;
         }
 
-        if (collision.gameObject.CompareTag("deathZone")) //This player will not run om the wall.
+        if (collision.gameObject.CompareTag("deathZone")) //death player
         {
             Destroy(gameObject);
         }
