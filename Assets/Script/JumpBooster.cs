@@ -13,7 +13,7 @@ public class JumpBooster : MonoBehaviour
 
             if (rb != null)
             {
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); // Reset Y velocity
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z); // Reset Y velocity
                 rb.AddForce(Vector3.up * jumpBoostForce, ForceMode.Impulse); // Add upward force
             }
         }
