@@ -7,7 +7,7 @@ public class deathZone : MonoBehaviour //the zone that will kill player if touch
     public Transform spawnPoint;
 
     // Spawning and GameOver---------------------------------------------------
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
